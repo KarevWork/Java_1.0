@@ -7,6 +7,15 @@ public class Task_7 {
         final int X = 2;
         final int Y = 6;
         final int Z = 10;
+        // Первый вариант
+        if (number == X || number == Y || number == Z) {
+            System.out.print("Данное значение имеется в константах");
+        }
+        else {
+            System.out.print("Такой константы нет!");
+        }
+        // Второй вариант
+        /*
         switch (number) {
             case X:
             case Y:
@@ -15,6 +24,6 @@ public class Task_7 {
                 break;
             default:
                 System.out.print("Такой константы нет!");
-        }
+         */
     }
 }
