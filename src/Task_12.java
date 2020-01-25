@@ -5,6 +5,6 @@ public class Task_12 {
         Scanner scan = new Scanner(System.in);
         System.out.print("Введите любой набор символов, добавляя пробелы: ");
         String userString = scan.nextLine();
-        System.out.print("Ваши символы без пробелов: "+ userString.replace(" ", ""));
+        System.out.print("Ваши символы без пробелов: " + userString.replace(" ", ""));
     }
 }
