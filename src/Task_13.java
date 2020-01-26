@@ -10,11 +10,9 @@ public class Task_13 {
         System.out.println("Какая из строк длиньше?");
         if (userString1.length() > userString2.length()) {
             System.out.println("Первая: " + userString1);
-        }
-        else if (userString1.length() < userString2.length()) {
+        } else if (userString1.length() < userString2.length()) {
             System.out.println("Вторая: " + userString2);
-        }
-        else {
+        } else {
             System.out.println("Длины ваших строк равны");
         }
     }
