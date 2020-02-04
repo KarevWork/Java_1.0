@@ -20,7 +20,7 @@ public class Task_17 {
             }
             fw.close();
         } catch (IOException e) {
-            System.out.println("Ошибка ввода-вывода");
+            System.out.println("Ошибка ввода-вывода1");
         }
     }
 }
