@@ -9,12 +9,11 @@ public class Task_17 {
             Scanner scan = new Scanner(System.in);
             System.out.println("Начните вводить свой текст: ");
             String str;
-            while (true){
+            while (true) {
                 str = scan.nextLine();
                 if (str.equals("Stop")) {
                     break;
-                }
-                else {
+                } else {
                     fw.write(str + "\n");
                 }
             }
