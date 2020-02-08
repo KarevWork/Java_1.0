@@ -18,13 +18,13 @@ public class Task_18 {
             Scanner scan = new Scanner(System.in);
             System.out.println("Начните вводить свой текст: ");
             String str;
-            while (true) {
+            while (true){
                 str = scan.nextLine();
                 fw.write(str + "\n");
-                if (str.equals(Integer.toString(LineNumber))){
+                LineNumber--;
+                if (LineNumber==0) {
                     break;
-                }
-                else if (str.equals("Stop")) {
+                } else if (str.equals("Stop")) {
                     break;
                 }
             }
