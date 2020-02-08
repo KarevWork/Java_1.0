@@ -1,0 +1,38 @@
+import java.util.Scanner;
+import java.io.*;
+
+public class Task_18 {
+    public static void main(String[] args) {
+        try {
+            FileReader fr = new FileReader("TestFile");
+            Scanner scanFile = new Scanner(fr);
+            int LineNumber = 0;
+            System.out.println("Текст из вашего файла");
+            while (scanFile.hasNextLine()) {
+                System.out.println(scanFile.nextLine());
+                LineNumber++;
+            }
+            fr.close();
+            System.out.println("Для прекращения записи введите 'Stop'");
+            FileWriter fw = new FileWriter("TestFile");
+            Scanner scan = new Scanner(System.in);
+            System.out.println("Начните вводить свой текст: ");
+            String str;
+            while (true) {
+                str = scan.nextLine();
+                fw.write(str + "\n");
+                if (str.equals(Integer.toString(LineNumber))){
+                    break;
+                }
+                else if (str.equals("Stop")) {
+                    break;
+                }
+            }
+            fw.close();
+        } catch (FileNotFoundException e) {
+            System.out.println("Файл не найден");
+        } catch (IOException e) {
+            System.out.println("Ошибка ввода-вывода");
+        }
+    }
+}
